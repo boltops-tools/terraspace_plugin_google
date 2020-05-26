@@ -1,4 +1,4 @@
-require "google-cloud-storage"
+require "google/cloud/storage"
 
 module TerraspaceProvider
   module Clients

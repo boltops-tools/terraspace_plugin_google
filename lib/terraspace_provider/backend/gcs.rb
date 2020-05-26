@@ -18,16 +18,12 @@ module TerraspaceProvider::Backend
     end
 
     def exist?(name)
-      x = storgae.get_bucket(name)
-      puts "get_bucket result #{x}"
-      true  # Bucket exist
-    # rescue Aws::S3::Errors::NotFound
-    #   false # Bucket does not exist
-    # rescue Aws::S3::Errors::Forbidden => e
-    #   puts "#{e.class}: #{e.message}"
-    #   puts "ERROR: Bucket is not available: #{name}".color(:red)
-    #   puts "Bucket might be owned by someone else or is on another one of your AWS accounts."
-    #   exit 1
+      !!storage.bucket(name)
+    rescue Google::Cloud::PermissionDeniedError => e
+      puts "#{e.class}: #{e.message}"
+      puts "ERROR: Bucket is not available: #{name}".color(:red)
+      puts "Bucket might be owned by someone else or is on another one of your Google accounts."
+      exit 1
     end
   end
 end
