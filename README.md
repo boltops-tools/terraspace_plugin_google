@@ -7,9 +7,9 @@ Google Cloud support for terraspace.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'terraspace-provider-gcp'
+gem 'terraspace_provider_gcp'
 ```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/boltops-tools/terraspace-provider-gcp.
+Bug reports and pull requests are welcome on GitHub at https://github.com/boltops-tools/terraspace_provider_gcp.

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    terraspace-provider-gcp (0.0.0)
+    terraspace_provider_gcp (0.0.0)
       gcp_data
       google-cloud-storage
       memoist
@@ -129,7 +129,7 @@ DEPENDENCIES
   rake (~> 12.0)
   rspec (~> 3.0)
   terraspace!
-  terraspace-provider-gcp!
+  terraspace_provider_gcp!
 
 BUNDLED WITH
    2.1.4

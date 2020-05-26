@@ -1,7 +1,7 @@
-module TerraspaceProvider::Backend
-  class Gcs
+module TerraspaceProviderGcp::Interfaces
+  class Backend
     include Terraspace::Provider::Backend::Interface
-    include TerraspaceProvider::Clients
+    include TerraspaceProviderGcp::Clients
 
     def create
       bucket = @info["bucket"]
