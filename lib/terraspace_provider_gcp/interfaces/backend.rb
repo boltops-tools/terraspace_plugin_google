@@ -3,7 +3,7 @@ module TerraspaceProviderGcp::Interfaces
     include Terraspace::Provider::Backend::Interface
     include TerraspaceProviderGcp::Clients
 
-    def create
+    def call
       bucket = @info["bucket"]
       unless bucket # not bucket provided
         puts "ERROR: no bucket value provided in your terraform backend config".color(:red)
