@@ -1,5 +1,5 @@
-variable "network_name" {
-  default     = "demo-network"
-  description = "network name"
-  type        = string
+variable "bucket_policy_only" {
+  description = "bucket_policy_only"
+  type        = bool
+  default     = false
 }

@@ -1,4 +1,4 @@
-output("network_id",
-  description: "vpc network id",
-  value:       "${module.network.network_id}",
+output("bucket_url",
+  description: "bucket url",
+  value:       "${module.bucket.url}",
 )

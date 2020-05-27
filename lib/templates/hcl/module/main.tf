@@ -1,4 +1,4 @@
-resource "google_compute_network" "vpc_network" {
-  name                    = var.name
-  auto_create_subnetworks = false
+resource "google_storage_bucket" "this" {
+  name               = var.name
+  bucket_policy_only = var.bucket_policy_only
 }
