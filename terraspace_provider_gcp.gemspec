@@ -25,6 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "gcp_data"
   spec.add_dependency "google-cloud-storage"
   spec.add_dependency "memoist"
-  spec.add_dependency "terraspace"
   spec.add_dependency "zeitwerk"
 end
