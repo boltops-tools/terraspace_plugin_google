@@ -1,6 +1,6 @@
-# Terraspace GCP Provider
+# Terraspace Google Cloud Provider
 
-Google Cloud support for terraspace.
+Google Cloud support for [terraspace](https://terraspace.cloud/).
 
 ## Installation
 
