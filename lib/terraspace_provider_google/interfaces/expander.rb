@@ -6,7 +6,7 @@ module TerraspaceProviderGoogle::Interfaces
     delegate :project, :region, to: :gcp_data
 
     def gcp_data
-      $__gcp_data ||= GcpData
+      GcpData
     end
   end
 end
