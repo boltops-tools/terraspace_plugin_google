@@ -14,6 +14,6 @@ end
 
 Terraspace::Provider.register("google",
   backend: "gcs",
+  layer_class: TerraspaceProviderGoogle::Interfaces::Layer,
   root: File.dirname(__dir__),
-  region_class: TerraspaceProviderGoogle::Interfaces::Region, # used for layering
 )

@@ -1,12 +1,18 @@
 require "gcp_data"
 
 module TerraspaceProviderGoogle::Interfaces
-  class Region
+  class Layer
     extend Memoist
 
     # interface method
-    def current
+    def region
       gcp_data.region
+    end
+
+    # interface method
+    # not a typo, mapping project to "account" to confirm to interface
+    def account
+      gcp_data.project
     end
 
     # interface method
