@@ -14,5 +14,6 @@ end
 
 Terraspace::Provider.register("gcp",
   backend: "gcs",
-  root: File.dirname(__dir__)
+  root: File.dirname(__dir__),
+  resource_map: {google: "gcp"},
 )
