@@ -1,5 +1,5 @@
-RSpec.describe TerraspaceProviderGcp do
+RSpec.describe TerraspaceProviderGoogle do
   it "has a version number" do
-    expect(TerraspaceProviderGcp::VERSION).not_to be nil
+    expect(TerraspaceProviderGoogle::VERSION).not_to be nil
   end
 end

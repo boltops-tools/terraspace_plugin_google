@@ -1,7 +1,7 @@
-module TerraspaceProviderGcp::Interfaces
+module TerraspaceProviderGoogle::Interfaces
   class Backend
     include Terraspace::Provider::Backend::Interface
-    include TerraspaceProviderGcp::Clients
+    include TerraspaceProviderGoogle::Clients
 
     def call
       bucket = @info["bucket"]

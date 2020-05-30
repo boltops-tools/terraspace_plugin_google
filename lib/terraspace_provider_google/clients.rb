@@ -1,6 +1,6 @@
 require "google/cloud/storage"
 
-module TerraspaceProviderGcp
+module TerraspaceProviderGoogle
   module Clients
     extend Memoist
 

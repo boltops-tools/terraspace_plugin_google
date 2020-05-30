@@ -1,8 +1,8 @@
 # Instead of using provider, probably better to use environment variables in your shell.
 # IE: Put this in your ~/.bash_profile:
 #
-# export GOOGLE_APPLICATION_CREDENTIALS=~/.gcp/credentials.json
-# export GOOGLE_PROJECT=$(cat ~/.gcp/credentials.json  | jq -r '.project_id')
+# export GOOGLE_APPLICATION_CREDENTIALS=~/.google/credentials.json
+# export GOOGLE_PROJECT=$(cat ~/.google/credentials.json  | jq -r '.project_id')
 #
 # Here's an example of the google provider anyway also.
 #

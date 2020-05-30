@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "terraspace_provider_gcp"
+require "terraspace_provider_google"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
