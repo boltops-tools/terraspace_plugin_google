@@ -13,7 +13,14 @@ module TerraspaceProviderGoogle::Interfaces
         # puts "Bucket already exist: #{bucket}"
       else
         puts "Creating bucket: #{bucket}"
-        storage.create_bucket(bucket)
+        create_bucket(bucket)
+      end
+    end
+
+    def create_bucket(bucket)
+      c = TerraspaceProviderGoogle::Interfaces::Config.instance.config.gcs
+      storage.create_bucket(bucket) do |b|
+        b.versioning = c.versioning
       end
     end
 
