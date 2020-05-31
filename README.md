@@ -24,10 +24,9 @@ end
 
 By default:
 
-* GCS Buckets have versioning enabled.
+* GCS Buckets have [versioning](https://cloud.google.com/storage/docs/object-versioning) enabled.
 
 The settings generally only apply if the gcs bucket does not yet exist yet and is created for the first time.
-
 
 ## Versioning
 
