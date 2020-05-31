@@ -1,6 +1,6 @@
-module TerraspaceProviderGoogle::Interfaces
+module TerraspacePluginGoogle::Interfaces
   class Config
-    include Terraspace::Provider::Config::Interface
+    include Terraspace::Plugin::Config::Interface
     include Singleton
 
     def provider

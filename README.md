@@ -1,4 +1,4 @@
-# Terraspace Google Cloud Provider
+# Terraspace Google Cloud Plugin
 
 Google Cloud support for [terraspace](https://terraspace.cloud/).
 
@@ -7,17 +7,17 @@ Google Cloud support for [terraspace](https://terraspace.cloud/).
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'terraspace_provider_google'
+gem 'terraspace_plugin_google'
 ```
 
 ## Configure
 
-Optionally configure the provider. Here's an example `google.rb` for your terraspace project.
+Optionally configure the plugin. Here's an example `google.rb` for your terraspace project.
 
-config/providers/google.rb
+config/plugins/google.rb
 
 ```ruby
-TerraspaceProviderGoogle.configure do |config|
+TerraspacePluginGoogle.configure do |config|
   config.gcs.versioning = true
 end
 ```
@@ -54,4 +54,4 @@ Here's also how you list multiple versions of an object.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/boltops-tools/terraspace_provider_google.
+Bug reports and pull requests are welcome on GitHub at https://github.com/boltops-tools/terraspace_plugin_google.

@@ -1,6 +1,6 @@
 require "gcp_data"
 
-module TerraspaceProviderGoogle::Interfaces
+module TerraspacePluginGoogle::Interfaces
   class Layer
     extend Memoist
 
