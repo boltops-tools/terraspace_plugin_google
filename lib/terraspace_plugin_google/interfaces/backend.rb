@@ -1,7 +1,7 @@
-module TerraspaceProviderGoogle::Interfaces
+module TerraspacePluginGoogle::Interfaces
   class Backend
-    include Terraspace::Provider::Backend::Interface
-    include TerraspaceProviderGoogle::Clients
+    include Terraspace::Plugin::Backend::Interface
+    include TerraspacePluginGoogle::Clients
 
     def call
       bucket = @info["bucket"]
@@ -13,7 +13,14 @@ module TerraspaceProviderGoogle::Interfaces
         # puts "Bucket already exist: #{bucket}"
       else
         puts "Creating bucket: #{bucket}"
-        storage.create_bucket(bucket)
+        create_bucket(bucket)
+      end
+    end
+
+    def create_bucket(bucket)
+      c = TerraspacePluginGoogle::Interfaces::Config.instance.config.gcs
+      storage.create_bucket(bucket) do |b|
+        b.versioning = c.versioning
       end
     end
 

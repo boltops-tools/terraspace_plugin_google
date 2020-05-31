@@ -1,8 +1,8 @@
 require "gcp_data"
 
-module TerraspaceProviderGoogle::Interfaces
+module TerraspacePluginGoogle::Interfaces
   class Expander
-    include Terraspace::Provider::Expander::Interface
+    include Terraspace::Plugin::Expander::Interface
     delegate :project, :region, to: :gcp_data
 
     def gcp_data

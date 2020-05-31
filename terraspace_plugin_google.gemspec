@@ -1,13 +1,13 @@
-require_relative 'lib/terraspace_provider_google/version'
+require_relative 'lib/terraspace_plugin_google/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "terraspace_provider_google"
-  spec.version       = TerraspaceProviderGoogle::VERSION
+  spec.name          = "terraspace_plugin_google"
+  spec.version       = TerraspacePluginGoogle::VERSION
   spec.authors       = ["Tung Nguyen"]
   spec.email         = ["tung@boltops.com"]
 
-  spec.summary       = "Terraspace Google Cloud Provider"
-  spec.homepage      = "https://github.com/boltops-tools/terraspace_provider_google"
+  spec.summary       = "Terraspace Google Cloud Plugin"
+  spec.homepage      = "https://github.com/boltops-tools/terraspace_plugin_google"
   spec.license       = "Apache2.0"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
