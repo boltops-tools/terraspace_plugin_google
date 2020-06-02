@@ -22,7 +22,7 @@ end
 
 Terraspace::Plugin.register("google",
   backend: "gcs",
-  config_instance: TerraspacePluginGoogle::Interfaces::Config.instance,
+  config_class: TerraspacePluginGoogle::Interfaces::Config,
   layer_class: TerraspacePluginGoogle::Interfaces::Layer,
   root: File.dirname(__dir__),
 )
