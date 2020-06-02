@@ -5,23 +5,18 @@ module TerraspacePluginGoogle::Interfaces
     extend Memoist
 
     # interface method
-    def region
-      gcp_data.region
+    def namespace
+      GcpData.project
     end
 
     # interface method
-    # not a typo, mapping project to "account" to confirm to interface
-    def account
-      gcp_data.project
+    def region
+      GcpData.region
     end
 
     # interface method
     def provider
       "google"
-    end
-
-    def gcp_data
-      GcpData
     end
   end
 end
