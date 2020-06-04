@@ -19,11 +19,8 @@ describe "main" do
   end
 
   it "successful deploy" do
-    # Replace with your actual test
-    expect(true).to be true
     # Example
-    output_value = terraspace.output("demo", "bucket_name")
-    puts "output_value #{output_value}"
-    # expect(output_value).to include("some-value")
+    bucket_url = terraspace.output("demo", "bucket_url") # IE: gs://bucket-free-coyote
+    expect(bucket_url).to include("gs://bucket-")
   end
 end

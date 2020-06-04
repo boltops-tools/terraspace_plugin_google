@@ -4,15 +4,17 @@ module TerraspacePluginGoogle::Interfaces
     include TerraspacePluginGoogle::Clients
 
     def call
+      return unless TerraspacePluginGoogle.config.auto_create
+
       bucket = @info["bucket"]
       unless bucket # not bucket provided
-        puts "ERROR: no bucket value provided in your terraform backend config".color(:red)
+        logger.error "ERROR: no bucket value provided in your terraform backend config"
         exit 1
       end
       if exist?(bucket)
-        # puts "Bucket already exist: #{bucket}"
+        logger.debug "Bucket already exist: #{bucket}"
       else
-        puts "Creating bucket: #{bucket}"
+        logger.info "Creating bucket: #{bucket}"
         create_bucket(bucket)
       end
     end
@@ -27,10 +29,14 @@ module TerraspacePluginGoogle::Interfaces
     def exist?(name)
       !!storage.bucket(name)
     rescue Google::Cloud::PermissionDeniedError => e
-      puts "#{e.class}: #{e.message}"
-      puts "ERROR: Bucket is not available: #{name}".color(:red)
-      puts "Bucket might be owned by someone else or is on another one of your Google accounts."
+      logger.error "#{e.class}: #{e.message}"
+      logger.error "ERROR: Bucket is not available: #{name}".color(:red)
+      logger.error "Bucket might be owned by someone else or is on another one of your Google accounts."
       exit 1
+    end
+
+    def logger
+      Terraspace.logger
     end
   end
 end

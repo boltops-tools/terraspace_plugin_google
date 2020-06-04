@@ -17,6 +17,11 @@ module TerraspacePluginGoogle
   def configure(&block)
     Interfaces::Config.instance.configure(&block)
   end
+
+  def config
+    Interfaces::Config.instance.config
+  end
+
   extend self
 end
 

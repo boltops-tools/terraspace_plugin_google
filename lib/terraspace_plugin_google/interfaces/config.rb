@@ -9,9 +9,10 @@ module TerraspacePluginGoogle::Interfaces
       "google"
     end
 
-    # interface method 
+    # interface method
     def defaults
       c = ActiveSupport::OrderedOptions.new
+      c.auto_create = true
       c.gcs = ActiveSupport::OrderedOptions.new
       c.gcs.versioning = true
       c
