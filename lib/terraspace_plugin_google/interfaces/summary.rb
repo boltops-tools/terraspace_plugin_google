@@ -19,5 +19,12 @@ module TerraspacePluginGoogle::Interfaces
         file.download(local_path)
       end
     end
+
+    # interface method
+    def delete_empty_statefile(key)
+      bucket = storage.bucket(@bucket)
+      file = bucket.file(key)
+      file.delete
+    end
   end
 end
