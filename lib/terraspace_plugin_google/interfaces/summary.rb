@@ -13,6 +13,7 @@ module TerraspacePluginGoogle::Interfaces
       bucket = storage.bucket(@bucket)
       bucket.files(prefix: @folder).all do |f|
         file = bucket.file(f.name)
+        next if file.nil? # in case file has been removed since .files
         # Note the f.name already includes the folder
         local_path = "#{@dest}/#{f.name}"
         FileUtils.mkdir_p(File.dirname(local_path))
