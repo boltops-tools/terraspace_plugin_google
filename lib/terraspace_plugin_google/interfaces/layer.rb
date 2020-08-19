@@ -2,6 +2,7 @@ require "gcp_data"
 
 module TerraspacePluginGoogle::Interfaces
   class Layer
+    include Terraspace::Plugin::Layer::Interface
     extend Memoist
 
     # interface method
@@ -12,11 +13,6 @@ module TerraspacePluginGoogle::Interfaces
     # interface method
     def region
       GcpData.region
-    end
-
-    # interface method
-    def provider
-      "google"
     end
   end
 end
