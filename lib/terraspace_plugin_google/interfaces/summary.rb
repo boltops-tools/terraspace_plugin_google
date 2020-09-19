@@ -11,6 +11,10 @@ module TerraspacePluginGoogle::Interfaces
     # interface method
     def download
       bucket = storage.bucket(@bucket)
+      unless bucket
+        logger.error "ERROR: bucket #{@bucket} does not exist".color(:red)
+        exit 1
+      end
       bucket.files(prefix: @folder).all do |f|
         file = bucket.file(f.name)
         next if file.nil? # in case file has been removed since .files

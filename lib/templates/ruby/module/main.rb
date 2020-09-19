@@ -1,4 +1,4 @@
 resource("google_storage_bucket", "this",
-  name:              var.name,
-  bucket_policy_only:var.bucket_policy_only,
+  name:                         var.name,
+  uniform_bucket_level_access: var.uniform_bucket_level_access,
 )
