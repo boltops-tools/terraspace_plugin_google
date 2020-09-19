@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project *loosely tries* to adhere to [Semantic Versioning](http://semver.org/).
 
+## [0.2.1]
+- #3 update starter example template: bucket_policy_only deprecated for uniform_bucket_level_access
+- edge case: graceful error when bucket doesnt exist yet
+
 ## [0.2.0]
 - #2 include layer interface, update template to use expansion method
 
