@@ -22,12 +22,22 @@ module TerraspacePluginGoogle
     Interfaces::Config.instance.config
   end
 
+  @@logger = nil
+  def logger
+    @@logger ||= Terraspace.logger
+  end
+
+  def logger=(v)
+    @@logger = v
+  end
+
   extend self
 end
 
 Terraspace::Plugin.register("google",
   backend: "gcs",
   config_class: TerraspacePluginGoogle::Interfaces::Config,
+  helper_class: TerraspacePluginGoogle::Interfaces::Helper,
   layer_class: TerraspacePluginGoogle::Interfaces::Layer,
   root: File.dirname(__dir__),
 )
