@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project *loosely tries* to adhere to [Semantic Versioning](http://semver.org/).
 
+## [0.3.0] - 2020-11-15
+- [#5](https://github.com/boltops-tools/terraspace_provider_google/pull/5) helper and secrets support
+- google secret
+
 ## [0.2.2]
 - #4 fix test template: folder rename to stacks
 
