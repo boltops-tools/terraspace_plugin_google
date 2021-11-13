@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 This project *loosely tries* to adhere to [Semantic Versioning](http://semver.org/).
 
+## [0.3.1] - 2021-11-13
+- [#7](https://github.com/boltops-tools/terraspace_provider_google/pull/7) get google project number via api
+
 ## [0.3.0] - 2020-11-15
 - [#5](https://github.com/boltops-tools/terraspace_provider_google/pull/5) helper and secrets support
 - google secret
