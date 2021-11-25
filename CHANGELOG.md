@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 This project *loosely tries* to adhere to [Semantic Versioning](http://semver.org/).
 
+## [0.3.2] - 2021-11-25
+- [#8](https://github.com/boltops-tools/terraspace_provider_google/pull/8) update example templates to include bucket location which is now required
+
 ## [0.3.1] - 2021-11-13
 - [#7](https://github.com/boltops-tools/terraspace_provider_google/pull/7) get google project number via api
 
