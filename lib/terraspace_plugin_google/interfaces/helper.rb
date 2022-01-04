@@ -3,7 +3,7 @@ module TerraspacePluginGoogle::Interfaces
     include Terraspace::Plugin::Helper::Interface
 
     def google_secret(name, options={})
-      Secret.new(options).fetch(name)
+      Secret.new(@mod, options).fetch(name)
     end
     cache_helper :google_secret
   end
