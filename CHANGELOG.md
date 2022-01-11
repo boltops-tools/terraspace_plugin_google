@@ -3,6 +3,9 @@
 All notable changes to this project will be documented in this file.
 This project *loosely tries* to adhere to [Semantic Versioning](http://semver.org/).
 
+## [0.3.5] - 2022-01-11
+- [#11](https://github.com/boltops-tools/terraspace_provider_google/pull/11) set GOOGLE_CLOUD_PROJECT while keeping backwards compatibility
+
 ## [0.3.4] - 2022-01-11
 - [#10](https://github.com/boltops-tools/terraspace_provider_google/pull/10) set GOOGLE_CLOUD_PROJECT while keeping backwards compatibility
 
