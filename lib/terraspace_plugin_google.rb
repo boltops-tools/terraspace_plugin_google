@@ -39,5 +39,6 @@ Terraspace::Plugin.register("google",
   config_class: TerraspacePluginGoogle::Interfaces::Config,
   helper_class: TerraspacePluginGoogle::Interfaces::Helper,
   layer_class: TerraspacePluginGoogle::Interfaces::Layer,
+  ci_class: TerraspacePluginGoogle::Interfaces::Ci,
   root: File.dirname(__dir__),
 )
