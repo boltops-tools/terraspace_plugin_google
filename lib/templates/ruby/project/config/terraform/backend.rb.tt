@@ -1,4 +1,4 @@
 backend("gcs",
-  bucket: "terraform-state-:PROJECT-:REGION-:ENV", # expanded by terraspace IE: terraform-state-project-us-central1-dev
-  prefix: ":REGION/:ENV/:BUILD_DIR", # expanded by terraspace IE: us-central1/dev/modules/vm
+  bucket: "terraform-state-:PROJECT-:REGION-:ENV",
+  prefix: ":TYPE_DIR/:APP/:ROLE/:MOD_NAME/:ENV/:EXTRA/:REGION",
 )
