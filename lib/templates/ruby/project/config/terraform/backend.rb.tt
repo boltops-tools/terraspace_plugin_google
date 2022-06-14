@@ -1,4 +1,4 @@
 backend("gcs",
   bucket: "terraform-state-:PROJECT-:REGION-:ENV",
-  prefix: ":TYPE_DIR/:APP/:ROLE/:MOD_NAME/:ENV/:EXTRA/:REGION",
+  prefix: ":PROJECT/:TYPE_DIR/:APP/:ROLE/:MOD_NAME/:ENV/:EXTRA/:REGION",
 )
