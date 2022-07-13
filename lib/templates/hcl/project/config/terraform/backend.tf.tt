@@ -1,3 +1,5 @@
+# Backend Config Variables Docs
+# https://terraspace.cloud/docs/config/backend/variables/
 terraform {
   backend "gcs" {
     bucket = "<%%= expansion('terraform-state-:PROJECT-:REGION-:ENV') %>"
