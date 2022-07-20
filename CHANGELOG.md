@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project *loosely tries* to adhere to [Semantic Versioning](http://semver.org/).
 
+## [0.5.0] - 2022-07-20
+- [#16](https://github.com/boltops-tools/terraspace_plugin_google/pull/16) update backend key generated default
+- fix ruby dsl starter example
+
 ## [0.4.2] - 2022-07-13
 - [#15](https://github.com/boltops-tools/terraspace_plugin_google/pull/15) add backend config variables docs comment
 
